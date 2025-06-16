@@ -2,6 +2,8 @@
 SELECT LastName AS apellido, FirstName AS nombre
 FROM Employees;
 
+
+
 ------ ORDER BY : ASC, DESC ------
 SELECT * FROM Products
 ORDER BY Price DESC;
@@ -19,7 +21,8 @@ SELECT * FROM Products
 ORDER BY ProductName, ProductID DESC;
 
 
--- Eliminar duplicados
+
+------ Eliminar duplicados ------
 SELECT DISTINCT ProductName 
 FROM Products
 ORDER BY ProductName ASC; -- Solo nos muestra un valor de cada duplicado
@@ -35,7 +38,6 @@ WHERE CategoryID = 1;
 
 ------ UPDATE ------
 SELECT * FROM turnos_medicos;
-
 
 UPDATE turnos_medicos 
 SET horario = '10:30', motivo = 'Dolor de muelas'
